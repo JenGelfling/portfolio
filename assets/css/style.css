@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set the body's background color. */
+body {
+    background-color: #d9dcd6;
+    display: flex;
+}
+
+/* Style of Header. */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*Set H1 style. */
+h1 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 48px;
+}
+
+/* Set navigation element style. */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
