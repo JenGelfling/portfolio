@@ -2,35 +2,61 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Set the body's background color. */
 body {
     background-color: #d9dcd6;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* Style of Header. */
-.header {
+header {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: center;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
+    background: #04907f;
+    color: #ffff;
+    align-items: center;
+  }
 
 /*Set H1 style. */
 h1 {
     display: inline-block;
     color: #ffffff;
+    margin-left: 30px;
     font-size: 48px;
 }
 
 /* Set navigation element style. */
 nav {
     display: flex;
-    padding-top: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
     margin-right: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: flex;
+    justify-self: right;
+    justify-items: right;
+    width: 100%;
+    padding: 20px;
     font-size: 20px;
 }
