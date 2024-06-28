@@ -102,9 +102,10 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    max-width: 30%;
+    min-width: 300px;
     padding: 20px;
     font-size: 20px;
+    order: 2;
 }
 
 section {
@@ -120,9 +121,9 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-self: start;
-    justify-items: start;
-    max-width: 70%;
+    justify-self: end;
+    justify-items: end;
+    min-width: 700px;
     padding: 20px;
     font-size: 20px;
 }
