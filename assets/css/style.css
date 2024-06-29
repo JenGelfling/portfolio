@@ -7,13 +7,14 @@
 
 /* Set the body's display styling. */
 body {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: left;
-    padding: 20px;
+    justify-content: left; */
+    padding: 0px;
     background: rgb(34,139,34);
-    background: linear-gradient(90deg, rgba(34,139,34,1) 0%, rgba(136,167,140,1) 50%, rgba(34,139,34,1) 100%);
+    background: rgb(26,99,26);
+    background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(136,167,140,1) 50%, rgba(26,99,26,1) 100%);
 }
 
 /* Style of Header. */
@@ -21,13 +22,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
-    justify-items: center;
-    padding: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    justify-content: center;
     color: #ffff;
-    align-items: center;
-    background: rgb(34,139,34);
-    background: linear-gradient(90deg, rgba(34,139,34,1) 0%, rgba(136,167,140,1) 50%, rgba(34,139,34,1) 100%);
+    background: rgb(26,99,26);
+    background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(136,167,140,1) 50%, rgba(26,99,26,1) 100%);
   }
 
 /*Set H1 style. */
@@ -35,32 +35,42 @@ h1 {
     display: inline-block;
     color: #ffffff;
     margin-left: 30px;
+    margin-top: 10px;
+    align-content: center;
     font-size: 48px;
 }
 
 /* Set navigation element style. */
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
-    margin-right: 20px;
+    align-content: right;
+    text-align: right;
+    padding: 20px;
+    margin-left: 30px;
     font-size: 20px;
 }
 
 nav ul {
     display: flex;
-    justify-content: right;
-    width: 100%;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
     font-size: 20px;
 }
 
 nav ul li {
     display: flex;
-    justify-self: right;
-    justify-items: right;
+    flex-wrap: wrap;
+    justify-content: right;
     width: 100%;
     padding: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: right;
 }
 
 a {
@@ -69,61 +79,62 @@ a {
 }
 
 .project1 {
-    display: flex;
-    flex-wrap: wrap;
     text-decoration: none;
     color: #ffffff;
 }
 
 .project2 {
-    display: flex;
-    flex-wrap: wrap;
     text-decoration: none;
     color: #ffffff;
 }
 
 .project3 {
-    display: flex;
-    flex-wrap: wrap;
     text-decoration: none;
     color: #ffffff;
 }
 
 .project4 {
-    display: flex;
-    flex-wrap: wrap;
     text-decoration: none;
     color: #ffffff;
+}
+
+.main-area {
+    display: flex;
 }
 
 aside {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    min-width: 300px;
+    max-width: 350px;
     padding: 20px;
+    margin-right: 20px;
     font-size: 20px;
-    order: 2;
 }
 
 section {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     font-size: 20px;
 }
 
+div.img {
+    display: flex;
+    flex-wrap: wrap;
+    size: 100%;
+}
+
 section p {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 10px;
 }
 
 main {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-self: end;
-    justify-items: end;
-    min-width: 700px;
+    max-width: 700px;
+    margin-left: 30px;
     padding: 20px;
     font-size: 20px;
 }
@@ -134,6 +145,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
-    background: rgb(34,139,34);
-    background: linear-gradient(90deg, rgba(34,139,34,1) 0%, rgba(136,167,140,1) 50%, rgba(34,139,34,1) 100%);
+    background: rgb(26,99,26);
+    background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(136,167,140,1) 50%, rgba(26,99,26,1) 100%);
+}
+
+@media screen and (max-width: 768px){
+    .main-area {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+    }
 }
