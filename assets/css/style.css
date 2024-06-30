@@ -135,6 +135,11 @@ section {
 } 
 */
 
+.about {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 section p {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +164,11 @@ footer {
     margin-right: 20px;
     background: rgb(26,99,26);
     background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(136,167,140,1) 50%, rgba(26,99,26,1) 100%);
+}
+
+.contact {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 768px){
