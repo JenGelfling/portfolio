@@ -7,10 +7,6 @@
 
 /* Set the body's display styling. */
 body {
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left; */
     padding: 0px;
     color: #e3eee4;
     background: rgb(34,139,34);
@@ -30,6 +26,7 @@ header {
     background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(130,158,133,100) 50%, rgba(26,99,26,1) 100%);
   }
 
+/* Set avatar styling */
 .sabriel-image {
     display: flex;
     align-content: center;
@@ -56,6 +53,7 @@ nav {
     font-size: 20px;
 }
 
+/* Set styling for nav list. */
 nav ul {
     display: flex;
     justify-content: right;
@@ -63,7 +61,6 @@ nav ul {
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
-    /* width: 90%; */
     font-size: 20px;
 }
 
@@ -81,28 +78,43 @@ li {
     justify-content: right;
 }
 
+/* Set styling for links. */
 a {
     text-decoration: none;
     color: #e3eee4;
-    ;
 }
 
+/* Add background color when hovering over links. */
 a:hover {
     background-color:#307d38;
 }
 
+/* Add ability to link to different area.*/
+.about {
+    text-decoration: none;
+}
+
+/* Add ability to link to different area.*/
 .project1 {
     text-decoration: none;
 }
 
+/* Add ability to link to different area.*/
 .project2 {
     text-decoration: none;
+}
+
+/* Add ability to link to different area.*/
+.contact {
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 .main-area {
     display: flex;
 }
 
+/* Syling for the Aside. */
 aside {
     display: flex;
     flex-wrap: wrap;
@@ -120,10 +132,7 @@ section {
     font-size: 20px;
 }
 
-.about {
-    text-decoration: none;
-}
-
+/* Add some margin to an image */
 .space {
     margin-right: 20px;
 }
@@ -134,6 +143,7 @@ section p {
     padding-top: 10px;
 }
 
+/* Styling for main. */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +154,7 @@ main {
     font-size: 20px;
 }
 
+/* Styling for footer. */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -154,11 +165,7 @@ footer {
     background: linear-gradient(90deg, rgba(26,99,26,1) 0%, rgba(130,158,133,100) 50%, rgba(26,99,26,1) 100%);
 }
 
-.contact {
-    text-decoration: none;
-    margin-right: 10px;
-}
-
+/* Change styling for when device is mobile or screen is small. */
 @media screen and (max-width: 768px){
     .main-area {
         flex-direction: column;
@@ -168,9 +175,3 @@ footer {
         order: 2;
     }
 }
-
-
-/*
-TODO:
-
- - README file
